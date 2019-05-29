@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Replica</title>
+    </head>
+    <body>
+
+<!---CSS-->       
+
+<style>
+
+
+     /*Navigation*/
+
+     .navigation {padding-top:1%;
+     padding-right:2%;
+     padding-left:2%;
+    }
+
+    .navigation ul {list-style-type:none;
+    margin:0;
+    padding:0;}
+    .navigation ul li {display: inline-block;
+    padding:2px;}            
+    .navigation ul li a {font-family: Helvetica, sans-serif;
+    color:black;
+    text-decoration:none;
+    font-size:15px;
+    }
+    .navigation ul li a:hover {text-decoration:underline;
+    color: grey;
+    }
+    div.navigation div.right {float:right;}
+    .navigation ul li img {vertical-align: middle;}
+
+
+
+    /*Main Content*/
+
+    .wrapper {height: 100%;
+        margin-bottom: -50px;}
+
+            
+            body, html {font-family: Helvetica, Arial, sans-serif;
+            height:100%;
+            margin:0;}
+
+            div.pagecontent {margin-top:10%;}
+
+            img.logo {width:20%;
+            margin-left:auto;
+            margin-right:auto;
+            display:block;
+            clear: both;
+            }
+
+
+            /*Search Bar*/
+
+            input.searchbar {border-radius:40px;
+            margin-left:auto;
+            margin-right:auto;
+            display:block;
+            width:45%;
+            padding:1%;
+            margin-top:2%;
+            border: 1px solid #f2f2f2;
+            background-image: url("https://i.postimg.cc/HspCHWJD/download.png");
+            background-repeat: no-repeat;
+            background-position-x: 97%;
+            background-position-y: 50%;
+            background-size: auto 30px;}
+
+             .microphone {float:right;
+             height:90%;}
+
+             input.searchbar:hover  {-moz-box-shadow:    3px 3px 5px 3px #f2f2f2;
+            -webkit-box-shadow: 3px 3px 5px 3px #f2f2f2;
+            box-shadow: 3px 3px 5px 3px #f2f2f2;}
+
+            div.submitbuttons {text-align: center;
+                padding-top:2%;
+}
+
+
+            input.innerbutton {width:100px;
+            display:inline-block;
+            background-color:#f2f2f2;
+            color:grey;
+            width:150px;
+           margin-left: 1%;
+           margin-right: 1%;
+            font-size:16px;
+            padding:10px 3px;
+            border-radius:3px;
+            border:0px;
+            font-family: Helvetica, sans-serif;}
+
+            input.innerbutton:hover {border:1px solid grey;}
+
+        /*Footer*/
+
+
+        
+        div.footer {background-color:#f2f2f2;
+        border-top:grey 1px solid;
+        padding-right: 2%;
+        padding-left: 2%;}
+
+        div.footer,.push {height:50px;}
+
+    div.footer ul li{list-style-type:none;
+    margin:0;
+    padding:0;
+    display: inline-block;
+    padding:2px;}
+    div.footer ul li a {font-family: Helvetica, sans-serif;
+    color: darkgray;
+    text-decoration:none;
+    font-size:15px;
+    }
+    div.footer ul li a:hover {text-decoration:underline;
+    color: grey;
+    }
+    div.footer div.right {float:right;}
+    
+    
+                 
+        </style>
+
+<!--HTML-->
+<div class="wrapper">
+       <div class="navigation"><ul>
+           <li><a href="#">About</a></li> 
+           <li><a href="#">Store</a></li>
+           <div class="right">
+           <li><a href="#">Gmail</a></li>
+           <li><a href="#">Links</a></li>
+           <li><img src="https://i.postimg.cc/4dKdcbjs/Screen-Shot-2019-05-28-at-8-14-56-PM.png" width="75px"></li>
+        </ul>
+    </div>
+        <div class="pagecontent">
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <form>
+            <input class="searchbar" type="text" name="search"></input>
+            <div class="submitbuttons"><input class="innerbutton" type="submit" value="Google Search"><input class="innerbutton lucky" type="submit" value="I'm Feeling Lucky"></div>
+        </form>
+        <div class="push"></div>
+        </div>
+    </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#">Advertising</a></li> 
+                <li><a href="#">Business</a></li>
+                <div class="right">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Setting</a></li>
+
+             </ul>
+         </div>
+    </body>
+</html>
