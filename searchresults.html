@@ -9,37 +9,10 @@
 
 <style>
 
-
-     /*Navigation*/
-
-     .navigation {padding-top:1%;
-     padding-right:2%;
-     padding-left:2%;
-    }
-
-    .navigation ul {list-style-type:none;
-    margin:0;
-    padding:0;}
-    .navigation ul li {display: inline-block;
-    padding:2px;}            
-    .navigation ul li a {font-family: Helvetica, sans-serif;
-    color:black;
-    text-decoration:none;
-    font-size:15px;
-    }
-    .navigation ul li a:hover {text-decoration:underline;
-    color: grey;
-    }
-    div.navigation div.right {float:right;}
-    .navigation ul li img {vertical-align: middle;}
-
-
-
     /*Main Content*/
 
     .wrapper {height: 100%;
         margin-bottom: -50px;}
-
             
             body, html {font-family: Helvetica, Arial, sans-serif;
             height:100%;
@@ -47,23 +20,11 @@
 
             div.pagecontent {margin-top:10%;}
 
-            img.logo {width:20%;
-            margin-left:auto;
-            margin-right:auto;
-            display:block;
-            clear: both;
-            }
 
+/*CSS Method 1 - Header Area
+          
 
-            /*Search Bar*/
-
-            input.searchbar {border-radius:40px;
-            margin-left:auto;
-            margin-right:auto;
-            display:block;
-            width:45%;
-            padding:1%;
-            margin-top:2%;
+             input.searchbar {border-radius:40px;
             border: 1px solid #f2f2f2;
             background-image: url("https://i.postimg.cc/HspCHWJD/download.png");
             background-repeat: no-repeat;
@@ -71,17 +32,11 @@
             background-position-y: 50%;
             background-size: auto 30px;}
 
-             .microphone {float:right;
-             height:90%;}
-
              input.searchbar:hover  {-moz-box-shadow:    3px 3px 5px 3px #f2f2f2;
             -webkit-box-shadow: 3px 3px 5px 3px #f2f2f2;
             box-shadow: 3px 3px 5px 3px #f2f2f2;}
 
-            div.submitbuttons {text-align: center;
-                padding-top:2%;
-}
-
+    
 
             input.innerbutton {width:100px;
             display:inline-block;
@@ -97,13 +52,81 @@
             font-family: Helvetica, sans-serif;}
 
             input.innerbutton:hover {border:1px solid grey;}
+          
+            .searchnav ul {position: relative;
+            left:-26px;
+            }
+
+            .searchnav ul li {display:inline;
+                list-style-type: none;
+                color:#191919;
+                padding: 0px 0px 15px 0px;
+                
+                }
+
+
+            .searchnav ul li a {color:#191919;
+                text-decoration: none;
+                margin-left:4%;}
+
+       */   
+
+
+       /**CSS Method 2 - Header Area**/
+          
+
+             input.searchbar {border-radius:40px;
+            border: 1px solid #f2f2f2;
+            background-image: url("https://i.postimg.cc/HspCHWJD/download.png");
+            background-repeat: no-repeat;
+            background-position-x: 97%;
+            background-position-y: 50%;
+            background-size: auto 30px;}
+
+             input.searchbar:hover  {-moz-box-shadow:    3px 3px 5px 3px #f2f2f2;
+            -webkit-box-shadow: 3px 3px 5px 3px #f2f2f2;
+            box-shadow: 3px 3px 5px 3px #f2f2f2;}
+
+    
+
+            input.innerbutton {width:100px;
+            display:inline-block;
+            background-color:#f2f2f2;
+            color:grey;
+            width:150px;
+           margin-left: 1%;
+           margin-right: 1%;
+            font-size:16px;
+            padding:10px 3px;
+            border-radius:3px;
+            border:0px;
+            font-family: Helvetica, sans-serif;}
+
+            input.innerbutton:hover {border:1px solid grey;}
+          
+            .searchnav ul {position: relative;
+            left:-26px;
+            }
+
+            .searchnav ul li {display:inline;
+                list-style-type: none;
+                color:#191919;
+                padding: 0px 0px 15px 0px;
+                
+                }
+
+
+            .searchnav ul li a {color:#191919;
+                text-decoration: none;
+                margin-left:4%;}
+
+       
 
         /*Footer*/
 
 
-        
         div.footer {background-color:#f2f2f2;
-        border-top:grey 1px solid;
+        border-top:#191919 1px solid;
         padding-right: 2%;
         padding-left: 2%;}
 
@@ -115,12 +138,12 @@
     display: inline-block;
     padding:2px;}
     div.footer ul li a {font-family: Helvetica, sans-serif;
-    color: darkgray;
+    color:#191919;
     text-decoration:none;
     font-size:15px;
     }
     div.footer ul li a:hover {text-decoration:underline;
-    color: grey;
+    color:#191919;
     }
     div.footer div.right {float:right;}
     
@@ -130,22 +153,55 @@
 
 <!--HTML-->
 <div class="wrapper">
-       <div class="navigation"><ul>
-           <li><a href="#">About</a></li> 
-           <li><a href="#">Store</a></li>
-           <div class="right">
-           <li><a href="#">Gmail</a></li>
-           <li><a href="#">Links</a></li>
-           <li><img src="https://i.postimg.cc/4dKdcbjs/Screen-Shot-2019-05-28-at-8-14-56-PM.png" width="75px"></li>
-        </ul>
-    </div>
-        <div class="pagecontent">
-        <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <form>
-            <input class="searchbar" type="text" name="search"></input>
-            <div class="submitbuttons"><input class="innerbutton" type="submit" value="Google Search"><input class="innerbutton lucky" type="submit" value="I'm Feeling Lucky"></div>
-        </form>
-        <div class="push"></div>
+   
+   
+   
+   <!--HTML Area 1 Header Area
+    <div class="header" style="border-bottom:1px solid grey; height:150px; display:block;">
+      <div class="logo" style="position: absolute; left:30px; top:3%; display:inline-block; "><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="width:120px;"></div>
+      <div class="searchnav" style="position: absolute; left:200px; top:24px; display:inline-block;">
+      <form>
+            <input class="searchbar" style="width:700px; height:40px;" type="text" name="search"></input>
+            </form>
+            <ul>
+             <li style="background-image: url('https://i.postimg.cc/RFpFHKkg/search.png');  background-position:left top; background-repeat:no-repeat; background-size: auto 20px; border-bottom: #4285f4 2px solid;"><a href="#" >All</a></li> 
+                <li><a href="#">News</a></li>
+                <li><a href="#">Shopping</a></li> 
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Tools</a></li>
+
+
+            </ul>
+        </div>
+          <div style="position:absolute; top:25px; right:10px; display:inline-block;"><img src="https://i.postimg.cc/4dKdcbjs/Screen-Shot-2019-05-28-at-8-14-56-PM.png" width="75px"></div>
+        </div>
+        End Header Area 1-->
+        <!--HTML  Header Area 2-->
+        <div class="header" style="border-bottom:1px solid grey; height:130px; display:block; padding-top:2%;">
+            <div class="logo" style="float:left; display:inline-block; margin-left: 3%; margin-right:1%;"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="width:120px;"></div>
+        <div class="searchnav" style="display:inline-block;">
+            <form>
+                  <input class="searchbar" style="width:700px; height:40px;" type="text" name="search"></input>
+                  </form>
+                  <ul>
+                   <li style="background-image: url('https://i.postimg.cc/RFpFHKkg/search.png');  background-position:left top; background-repeat:no-repeat; background-size: auto 20px; border-bottom: #4285f4 2px solid;"><a href="#" >All</a></li> 
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">Shopping</a></li> 
+                      <li><a href="#">Video</a></li>
+                      <li><a href="#">Images</a></li>
+                      <li><a href="#">Settings</a></li>
+                      <li><a href="#">Tools</a></li>
+      
+      
+                  </ul>
+        </div>
+            <div style="display:inline-block; float:right; margin-right:2%;"><img src="https://i.postimg.cc/4dKdcbjs/Screen-Shot-2019-05-28-at-8-14-56-PM.png" width="75px"></div>
+        </div>
+             <!--End Header Area 2-->
+
+     <div class="push"></div>
         </div>
     </div>
         <div class="footer">
