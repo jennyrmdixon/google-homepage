@@ -11,7 +11,7 @@
 
     /*Main Content*/
 
-    .wrapper {height: 100%;
+    .wrapper {min-height: 100%;
         margin-bottom: -50px;}
             
             body, html {font-family: Helvetica, Arial, sans-serif;
@@ -19,6 +19,11 @@
             margin:0;}
 
             div.pagecontent {margin-top:10%;}
+
+            div.result h3.title a {font-weight:500;
+            }
+p.url {color:#0f9d58;}
+p.info {color:grey;}
 
 
 /*CSS Method 1 - Header Area
@@ -128,9 +133,10 @@
         div.footer {background-color:#f2f2f2;
         border-top:#191919 1px solid;
         padding-right: 2%;
-        padding-left: 2%;}
+        padding-left: 2%;
+        position:sticky;}
 
-        div.footer,.push {height:50px;}
+        div.footer,.push {height:50px; position:sticky;}
 
     div.footer ul li{list-style-type:none;
     margin:0;
@@ -145,7 +151,7 @@
     div.footer ul li a:hover {text-decoration:underline;
     color:#191919;
     }
-    div.footer div.right {float:right;}
+    div.footer span.right {float:right;}
     
     
                  
@@ -180,10 +186,10 @@
         End Header Area 1-->
         <!--HTML  Header Area 2-->
         <div class="header" style="border-bottom:1px solid grey; height:130px; display:block; padding-top:2%;">
-            <div class="logo" style="float:left; display:inline-block; margin-left: 3%; margin-right:1%;"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="width:120px;"></div>
+            <div class="logo" style="float:left;  margin-left: 3%; margin-right:1%;"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="width:120px;"></div>
         <div class="searchnav" style="display:inline-block;">
             <form>
-                  <input class="searchbar" style="width:700px; height:40px;" type="text" name="search"></input>
+                  <input class="searchbar" style="width:700px; height:40px;" type="text" name="search">
                   </form>
                   <ul>
                    <li style="background-image: url('https://i.postimg.cc/RFpFHKkg/search.png');  background-position:left top; background-repeat:no-repeat; background-size: auto 20px; border-bottom: #4285f4 2px solid;"><a href="#" >All</a></li> 
@@ -197,23 +203,53 @@
       
                   </ul>
         </div>
-            <div style="display:inline-block; float:right; margin-right:2%;"><img src="https://i.postimg.cc/4dKdcbjs/Screen-Shot-2019-05-28-at-8-14-56-PM.png" width="75px"></div>
+            <div style="float:right; margin-right:2%;"><img src="https://i.postimg.cc/4dKdcbjs/Screen-Shot-2019-05-28-at-8-14-56-PM.png" width="75"></div>
         </div>
              <!--End Header Area 2-->
+<div class="content" style="width:700px; margin-left:13%;">
+<div class="result"><h3 class="title"><a href="#">Lorem Ipsum - All the facts - Lipsum generator</a></h3>
+    <p class="url">https://www.lipsum.com/</p>
+    <p class="info">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+</div>
+<div class="result"><h3 class="title"><a href="#">Lorem Ipsum - All the facts - Lipsum generator</a></h3>
+    <p class="url">https://www.lipsum.com/</p>
+    <p class="info">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+</div>
+<div class="result"><h3 class="title"><a href="#">Lorem Ipsum - All the facts - Lipsum generator</a></h3>
+    <p class="url">https://www.lipsum.com/</p>
+    <p class="info">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+</div>
+<div class="result"><h3 class="title"><a href="#">Lorem Ipsum - All the facts - Lipsum generator</a></h3>
+    <p class="url">https://www.lipsum.com/</p>
+    <p class="info">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+</div>
+<div class="result"><h3 class="title"><a href="#">Lorem Ipsum - All the facts - Lipsum generator</a></h3>
+    <p class="url">https://www.lipsum.com/</p>
+    <p class="info">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+</div>
+<div class="result"><h3 class="title"><a href="#">Lorem Ipsum - All the facts - Lipsum generator</a></h3>
+    <p class="url">https://www.lipsum.com/</p>
+    <p class="info">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+</div>
+<div class="result"><h3 class="title"><a href="#">Lorem Ipsum - All the facts - Lipsum generator</a></h3>
+    <p class="url">https://www.lipsum.com/</p>
+    <p class="info">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+</div>
+<div style="text-align:center;"><img src="https://i.postimg.cc/q7KLyxmj/Screen-Shot-2019-06-08-at-7-31-47-PM.png" style="width:350px; display:inline-block;"></div>
 
+</div>
+</div>
      <div class="push"></div>
-        </div>
-    </div>
         <div class="footer">
             <ul>
                 <li><a href="#">Advertising</a></li> 
                 <li><a href="#">Business</a></li>
-                <div class="right">
+                <span class="right">
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Setting</a></li>
-
+            </span>
              </ul>
-         </div>
+            </div>
     </body>
 </html>
